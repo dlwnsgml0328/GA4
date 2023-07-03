@@ -1,10 +1,19 @@
-import React from 'react';
+import HeadMeta from "@/components/HeadMeta";
 
 const Movie = () => {
   return (
-    <div>
-      <h1>Hello Movies</h1>
-    </div>
+    <>
+      <HeadMeta
+        description="junhee's movie"
+        title="junhee | movie"
+        image=""
+        url="https://ga-4.vercel.app/movie"
+      />
+
+      <div>
+        <h1>Hello Movies</h1>
+      </div>
+    </>
   );
 };
 
