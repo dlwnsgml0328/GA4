@@ -10,6 +10,7 @@ const Magazine = () => {
       value: '1',
     });
   };
+
   return (
     <>
       <HeadMeta

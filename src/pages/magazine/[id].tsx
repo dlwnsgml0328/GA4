@@ -1,5 +1,5 @@
-import HeadMeta from "@/components/HeadMeta";
-import { useRouter } from "next/router";
+import HeadMeta from '@/components/HeadMeta';
+import { useRouter } from 'next/router';
 
 const MagazineDetail = () => {
   const router = useRouter();
@@ -9,8 +9,8 @@ const MagazineDetail = () => {
     <>
       <HeadMeta
         description={`junhee's magazine detail ${id}`}
-        title="junhee | magazine"
-        image=""
+        title={`junhee | magazine - ${id}`}
+        image=''
         url={`https://ga-4.vercel.app/magazine/${id}`}
       />
 
