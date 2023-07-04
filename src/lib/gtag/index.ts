@@ -17,6 +17,7 @@ export const event = ({ action, category, label, value }: EventProps) => {
         event_category: category,
         event_label: label,
         value: value,
+        // send_to: GA_TRACKING_ID,
       });
     }
   } catch (err) {

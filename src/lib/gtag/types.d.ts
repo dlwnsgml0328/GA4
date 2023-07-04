@@ -1,6 +1,6 @@
 export interface EventProps {
-    action: string
-    category: string
-    label: string
-    value: string | number
+  action: Gtag.EventNames | string;
+  category: string;
+  label: string;
+  value: string | number;
 }

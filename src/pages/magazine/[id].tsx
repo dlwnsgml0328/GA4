@@ -1,6 +1,7 @@
 import HeadMeta from '@/components/HeadMeta';
 import { useRouter } from 'next/router';
 import * as gtag from '@/lib/gtag';
+import { useEffect } from 'react';
 
 const MagazineDetail = () => {
   const router = useRouter();
@@ -14,6 +15,17 @@ const MagazineDetail = () => {
       value: id,
     });
   };
+
+  useEffect(() => {
+    if (!id) return;
+
+    gtag.event({
+      action: 'view_item',
+      category: 'routes',
+      label: `magazine_detail-${id}`,
+      value: id,
+    });
+  }, [id]);
 
   return (
     <>
