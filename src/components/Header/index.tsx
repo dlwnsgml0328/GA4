@@ -24,6 +24,7 @@ export default Header;
 
 const Wrapper = styled('div', {
   marginTop: 10,
+
   ul: {
     display: 'flex',
     margin: 0,
