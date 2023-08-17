@@ -3,8 +3,24 @@ import Header from '@/components/Header';
 import type { AppProps } from 'next/app';
 import * as gtag from '../lib/gtag';
 import Script from 'next/script';
+import { useEffect } from 'react';
 
 export default function App({ Component, pageProps }: AppProps) {
+  const setOneVh = () => {
+    const vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+  };
+
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+
+    setOneVh();
+    window.addEventListener('resize', setOneVh);
+    return () => {
+      window.removeEventListener('resize', setOneVh);
+    };
+  }, []);
+
   return (
     <>
       <Script
