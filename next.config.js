@@ -19,7 +19,7 @@ module.exports = withSentryConfig(
     silent: true,
 
     org: 'eazel',
-    project: 'javascript-nextjs',
+    project: 'test',
   },
   {
     // For all available options, see:
