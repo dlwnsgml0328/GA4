@@ -15,12 +15,16 @@
     "@types/react-dom": "18.2.6",
     "eslint": "8.43.0",
     "eslint-config-next": "13.4.7",
+    "highcharts": "^11.1.0",
+    "highcharts-react-official": "^3.2.0",
     "next": "13.4.7",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "typescript": "5.1.6"
   },
   "devDependencies": {
-    "@types/gtag.js": "^0.0.12"
+    "@sentry/nextjs": "^7.66.0",
+    "@types/gtag.js": "^0.0.12",
+    "@types/highcharts": "^7.0.0"
   }
 }
